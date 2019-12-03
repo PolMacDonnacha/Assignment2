@@ -1,0 +1,34 @@
+﻿<Window x:Class="Assignment2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.686,0.028">
+        <RadioButton x:Name="RadioWater" Content="Water" HorizontalAlignment="Left" Margin="45,169,0,0" VerticalAlignment="Top" Click="RadioWater_Click"/>
+        <RadioButton x:Name="RadioLand" Content="Land" HorizontalAlignment="Left" Margin="45,132,0,0" VerticalAlignment="Top" Click="RadioLand_Click"/>
+        <RadioButton x:Name="RadioAll" Content="All" HorizontalAlignment="Left" Margin="45,98,0,0" VerticalAlignment="Top" Click="RadioAll_Click"/>
+        <ListBox x:Name="lstbxActivities" HorizontalAlignment="Left" Height="195" Margin="118,98,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="lstbxActivities_SelectionChanged"/>
+        <RadioButton x:Name="RadioAir" Content="Air" HorizontalAlignment="Left" Margin="45,210,0,0" VerticalAlignment="Top" Click="RadioAir_Click"/>
+        <Button x:Name="ButtonSelectActivity" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="335,127,0,0" VerticalAlignment="Top" Width="75" Click="ButtonSelectActivity_Click"/>
+        <Button x:Name="BtnUnselectActivity" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="335,166,0,0" VerticalAlignment="Top" Width="75" Click="BtnUnselectActivity_Click"/>
+        <ListBox x:Name="lstbxSelected" HorizontalAlignment="Left" Height="195" Margin="443,98,0,0" VerticalAlignment="Top" Width="205"/>
+        <Label x:Name="LabelOptions" Content="All Activities" HorizontalAlignment="Left" Margin="158,72,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label x:Name="LabelSelected" Content="Selected Activities" HorizontalAlignment="Left" Margin="493,72,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBlock x:Name="tbxdescription" HorizontalAlignment="Left" Margin="226,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" RenderTransformOrigin="0.5,0.5" Height="42">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.067"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.061"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="txtblk_cost" HorizontalAlignment="Left" Margin="565,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="83" TextAlignment="Center"/>
+        <Label x:Name="LabelCost" Content="Total Cost:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="443,43,0,0" Height="22" Width="117"/>
+
+    </Grid>
+</Window>
